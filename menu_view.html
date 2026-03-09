@@ -1,0 +1,125 @@
+<!-- menu_view.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu</title>
+        <link rel="icon" href="logo.jpeg">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.jpeg" alt="Sweet Scoops Ice Cream Logo" class="logo">
+            <h1 class="store-name">Sweet Scoops Ice Cream</h1>
+        </header>
+
+        <section class="navbar">
+            <a href="index.html">Home</a>
+        </section>
+
+        <main>
+            <section class="menu-section">
+                <label for="season">Current season:</label><br>
+
+                <select name="season" id="season" class="dropdown">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+            </section>
+
+            <section class="menu-section">
+                <h2>Available Flavors</h2>
+
+                <div class="ice-cream-tiles">
+                    <div class="tile">
+                        <h3>Vanilla Bean</h3>
+                        <p><strong>Category:</strong> Classic</p>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p>Rich vanilla bean flavor with a creamy, smooth finish.</p>
+                        <p>$3.99 - $6.99</p>
+                        <p>Gluten-Free</p>
+                        <a href="customize_order.html">Customize</a>
+                    </div>
+
+                    <div class="tile">
+                        <h3>Chocolate Fudge Swirl</h3>
+                        <p><strong>Category:</strong> Signature</p>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p>Dark chocolate base with ribbons of silky fudge.</p>
+                        <p>$4.49 - $7.49</p>
+                        <p>Contains Dairy</p>
+                        <a href="customize_order.html">Customize</a>
+                    </div>
+
+                    <div class="tile">
+                        <h3>Strawberry Bliss</h3>
+                        <p><strong>Category:</strong> Fruit</p>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p>Fresh strawberry puree mixed into a sweet cream base.</p>
+                        <p>$4.29 - $7.29</p>
+                        <p>Nut-Free</p>
+                        <a href="customize_order.html">Customize</a>
+                    </div>
+
+                    <div class="tile">
+                        <h3>Mint Chocolate Chip</h3>
+                        <p><strong>Category:</strong> Classic</p>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p>Refreshing mint ice cream with rich chocolate chips.</p>
+                        <p>$4.19 - $7.19</p>
+                        <p>Gluten-Free</p>
+                        <a href="customize_order.html">Customize</a>
+                    </div>
+
+                    <div class="tile">
+                        <h3>Cookies & Cream</h3>
+                        <p><strong>Category:</strong> Signature</p>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p>Classic vanilla ice cream loaded with chocolate cookie pieces.</p>
+                        <p>$4.39 - $7.39</p>
+                        <p>Vegetarian</p>
+                        <a href="customize_order.html">Customize</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2>Seasonal Specials</h2>
+
+                <div class="seasonal-tiles">
+                    <div class="tile">
+                        <h3>Peppermint Snow</h3>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p><strong>Price: $5.99</strong></p>
+                        <button type="button">Add</button>
+                        <button type="button" class="remove">Remove</button>
+                    </div>
+
+                    <div class="tile">
+                        <h3>Caramel Apple Crunch</h3>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p><strong>Price: $6.49</strong></p>
+                        <button type="button">Add</button>
+                        <button type="button" class="remove">Remove</button>
+                    </div>
+                    
+                    <div class="tile">
+                        <h3>Maple Pecan Delight</h3>
+                        <img src="Picture1.webp" alt="variety" class="variety">
+                        <p><strong>Price: $6.29</strong></p>
+                        <button type="button">Add</button>
+                        <button type="button" class="remove">Remove</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
