@@ -4,6 +4,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu</title>
         <link rel="icon" href="logo.jpeg">
         <link rel="stylesheet" href="styles.css">
@@ -95,25 +96,33 @@
                         <h3>Peppermint Snow</h3>
                         <img src="Picture1.webp" alt="variety" class="variety">
                         <p><strong>Price: $5.99</strong></p>
-                        <button type="button">Add</button>
-                        <button type="button" class="remove">Remove</button>
+                        <button type="button" class="add-cart" data-name="Peppermint Snow" data-price="5.99">Add</button>
+                        <button type="button" class="remove-cart" data-name="Peppermint Snow">Remove</button>
                     </div>
 
                     <div class="tile">
                         <h3>Caramel Apple Crunch</h3>
                         <img src="Picture1.webp" alt="variety" class="variety">
                         <p><strong>Price: $6.49</strong></p>
-                        <button type="button">Add</button>
-                        <button type="button" class="remove">Remove</button>
+                        <button type="button" class="add-cart" data-name="Caramel Apple Crunch" data-price="6.49">Add</button>
+                        <button type="button" class="remove-cart" data-name="Caramel Apple Crunch">Remove</button>
                     </div>
                     
                     <div class="tile">
                         <h3>Maple Pecan Delight</h3>
                         <img src="Picture1.webp" alt="variety" class="variety">
                         <p><strong>Price: $6.29</strong></p>
-                        <button type="button">Add</button>
-                        <button type="button" class="remove">Remove</button>
+                        <button type="button" class="add-cart" data-name="Maple Pecan Delight" data-price="6.29">Add</button>
+                        <button type="button" class="remove-cart" data-name="Maple Pecan Delight">Remove</button>
                     </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="left-align">Cart</h2>
+
+                <div class="cart-items">
+                    <p class="left-align" id="empty-cart">No items in cart.</p>
                 </div>
             </section>
         </main>
@@ -121,5 +130,7 @@
         <footer>
             <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
         </footer>
+
+        <script src="menu_view.js"></script>
     </body>
 </html>
