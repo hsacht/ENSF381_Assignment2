@@ -191,7 +191,7 @@ button {
     font-size: 16px;
 }
 
-.remove {
+.remove-cart {
     background-color: #c94c4c;
     color: white;
     border: none;
@@ -239,4 +239,24 @@ a {
     padding: 8px 14px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.cart-row {
+    background-color: white;
+    border: 2px solid #e4b48c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 0 8px;
+    line-height: 0.8;
+}
+
+.tile:hover {
+    background-color: rgb(233, 247, 249);
 }
