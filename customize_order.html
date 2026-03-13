@@ -23,50 +23,53 @@
 
         <main>
             <div class="customize-main">
+                <strong><p id="order-timer">Order Time remaining: 00:00</p></strong>
+
                 <img src="Picture2.jpeg" alt="banner" class="banner">
 
-                <h1>Vanilla Dream</h1>
-                <h2>Choose Type</h2>
+                <form id="order-form">
+                    <h1>Vanilla Dream</h1>
+                    <h2>Choose Type:</h2>
 
-                <label>
-                    <input type="radio" name="serving" value="cup"><br>
-                    <strong>Cup</strong>
-                </label><br>
+                    <label>
+                        <input type="radio" name="serving" value="Cup">
+                        <strong>Cup</strong>
+                    </label><br><br>
 
-                <label>
-                    <input type="radio" name="serving" value="cone"><br>
-                    <strong>Cone</strong>
-                </label><br><br>
+                    <label>
+                        <input type="radio" name="serving" value="Cone">
+                        <strong>Cone</strong>
+                    </label><br><br>
 
-                <button type="submit">Submit Selection</button><br><br>
+                    <h1>Chocolate Bliss</h1>
+                    <h2>Select Toppings:</h2>
 
-                <h1>Chocolate Bliss</h1>
-                <h2>Select Toppings</h2>
+                    <label>
+                        <input type="checkbox" name="topping" value="Sprinkles">
+                        <strong>Sprinkles</strong>
+                    </label><br><br>
 
-                <label>
-                    <input type="checkbox" name="sprinkles" value="sprinkles"><br>
-                    <strong>Sprinkles</strong>
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="topping" value="Nuts">
+                        <strong>Nuts</strong>
+                    </label><br><br>
 
-                <label>
-                    <input type="checkbox" name="nuts" value="nuts"><br>
-                    <strong>Nuts</strong>
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="topping" value="Caramel">
+                        <strong>Caramel</strong>
+                    </label><br><br>
 
-                <label>
-                    <input type="checkbox" name="caramel" value="caramel"><br>
-                    <strong>Caramel</strong>
-                </label><br><br>
+                    <p id="total-price">Total Price: $0.00</p>
 
-                <button type="submit">Submit Selection</button><br><br><br>
-
-                <a href="order_summary.html">Finish Order</a>
+                    <button type="submit">Submit Order</button>
+                </form>
             </div>
         </main>
-
 
         <footer>
             <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
         </footer>
+
+        <script src="customize_order.js"></script>
     </body>
 </html>
