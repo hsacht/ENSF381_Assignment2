@@ -1,3 +1,6 @@
+/* styles.cc */
+
+/* Layout / Page Structure */
 body {
     margin: 0;
 }
@@ -47,6 +50,11 @@ main {
     padding: 30px 20px;
 }
 
+main div h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
 main section {
     background-color: #fff8ee;
     border-radius: 25px;
@@ -73,28 +81,36 @@ footer p {
     margin: 0;
 }
 
-form {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
+/* Page Containers */
 .login-main {
-    display: flex;
-    margin-top: 50px;
-}
-
-main div h1 {
-    text-align: center;
-    margin-top: 0;
-}
-
-.login-container {
+    margin: 50px auto 0 auto;
     max-width: 1100px;
-    margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.customize-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-section {
+    width: 100%;
+    text-align: center;
+}
+
+/* Forms */
+form {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
 input[type="text"],
@@ -128,29 +144,45 @@ input[type="button"]:hover {
     cursor: pointer;
 }
 
-.dropdown {
-    background-color: #fff8ee;
-    border-radius: 10px;
-    padding: 6px 10px;
-    border: 2px solid #e4b48c;
+
+/* Buttons / Links */
+a {
+    text-decoration: none;
+    background-color: #f28c8c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.available-flavors {
-    text-align: center;
+button {
+    background-color: #f28c8c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.menu-section {
-    width: 100%;
-    text-align: center;
+button:hover {
+    cursor: pointer;
 }
 
+.remove-cart {
+    background-color: #c94c4c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+}
+
+/* Tiles / Menu Items */
 .ice-cream-tiles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-}
-
-.seasonal-tiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
@@ -164,7 +196,10 @@ input[type="button"]:hover {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
+}
 
+.tile:hover {
+    background-color: rgb(233, 247, 249);
 }
 
 .variety {
@@ -173,55 +208,7 @@ input[type="button"]:hover {
     border-radius: 15px;
 }
 
-.tile a {
-    text-decoration: none;
-    background-color: #f28c8c;
-    color: white;
-    border-radius: 12px;
-    padding: 8px 14px;
-}
-
-button {
-    background-color: #f28c8c;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 14px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-
-.remove-cart {
-    background-color: #c94c4c;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 14px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-.customize-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.banner {
-    width: 40%;
-}
-
-td {
-    padding: 10px 15px;
-    border: 1px solid black;
-}
-
+/* Tables */
 table {
     background-color: #fff8ee;
     text-align: left;
@@ -230,19 +217,21 @@ table {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-    background-color: #f28c8c;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 14px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+td {
+    padding: 10px 15px;
+    border: 1px solid black;
 }
 
-.left-align {
-    text-align: left;
+/* Misc Components */
+.dropdown {
+    background-color: #fff8ee;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 2px solid #e4b48c;
+}
+
+.banner {
+    width: 40%;
 }
 
 .cart-row {
@@ -257,6 +246,7 @@ a {
     line-height: 0.8;
 }
 
-.tile:hover {
-    background-color: rgb(233, 247, 249);
+/* Utility Classes */
+.left-align {
+    text-align: left;
 }
