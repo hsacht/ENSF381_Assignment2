@@ -24,7 +24,7 @@
             <div>
                 <h1>Welcome back!</h1>
                 
-                <form action="menu_view.html">
+                <form action="menu_view.html" id="loginForm">
                     <label for="username">Username:</label><br>
                     <input type="text" id="username" name="username"><br>
                     <label for="password">Password:</label><br>
@@ -33,11 +33,19 @@
                     <label for="forgot">Forgot Password</label><br>
                     <input type="submit" value="Login">
                 </form>
+
+                <div id="loginMessage" class="message-box">Username or Password is incorrect!</div>
+
+                <p class="signup-link">
+                    New User? <a href="signup.html">Create an Account</a>
+                </p>
             </div>
         </main>
 
         <footer>
             <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
         </footer>
+
+        <script src="login.js"></script>
     </body>
 </html>

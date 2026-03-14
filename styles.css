@@ -25,6 +25,33 @@ header {
     font-size: 28px;
 }
 
+.message-box {
+    visibility: hidden;
+    margin-bottom: 50px;
+    padding: 5px;
+    min-height: 15px;
+}
+
+.message-box.error {
+    visibility: visible;
+    color: rgb(190, 0, 0);
+    border: 1px solid red;
+    background-color: rgb(108, 8, 0, 0.079);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.message-box.success {
+    visibility: visible;
+    color: rgb(0, 82, 0);
+    border: 1px solid greenyellow;
+    background-color: rgba(0, 167, 3, 0.274);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
 .navbar {
     background-color: #fff3e0;
     text-align: center;
@@ -110,7 +137,7 @@ footer p {
 /* Forms */
 form {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
 }
 
 input[type="text"],
@@ -143,7 +170,6 @@ input[type="submit"]:hover {
 input[type="button"]:hover {
     cursor: pointer;
 }
-
 
 /* Buttons / Links */
 a {
