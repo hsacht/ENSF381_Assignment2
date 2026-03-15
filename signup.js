@@ -1,4 +1,4 @@
-const signupForm = document.getElementById('signup-form');
+const signupForm = document.getElementById('signupForm');
 
 const statusBox = document.createElement('div');
 statusBox.style.padding = "10px";
