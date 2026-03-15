@@ -1,4 +1,9 @@
 const loginForm= document.getElementById('loginForm');
+const statusBox = document.createElement('div');
+statusBox.style.padding = "10px";
+statusBox.style.marginTop = "10px";
+statusBox.style.borderRadius = "5px";   
+statusBox.style.textAlign = "center";
 
 loginForm.addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -9,23 +14,25 @@ loginForm.addEventListener('submit', async function(event) {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const data = await response.json();
+        //console.log(data);
 
         let loginSuccess = false;
 
         for (const user of data) {
             const isUsernameMatch = user.username.toLowerCase() === username.toLowerCase();
-            const isPasswordMatch = user.password === password;
+            const isPasswordMatch = user.email === password;
             if (isUsernameMatch && isPasswordMatch) {
                 loginSuccess = true;
                 break;
-            }
+            }   
         }
+        
+        statusBox.remove();
 
         if (loginSuccess) {
             statusBox.textContent = "Login Successful! Redirecting...";
-            statusBox.style.backgroundColor = "#d4edda";
+            statusBox.style.backgroundColor = "#D4EDDA";
             statusBox.style.color = "#155724";
-            statusBox.style.border = "1px solid #c3e6cb";
             loginForm.after(statusBox);
 
             setTimeout(() => {
@@ -34,9 +41,8 @@ loginForm.addEventListener('submit', async function(event) {
 
         } else {
             statusBox.textContent = "Invalid username or password. Please try again.";
-            statusBox.style.backgroundColor = "#f8d7da";
-            statusBox.style.color = "#721c24";
-            statusBox.style.border = "1px solid #f5c6cb";
+            statusBox.style.backgroundColor = "#F8D7DA";
+            statusBox.style.color = "#721C24";
             loginForm.after(statusBox);
         }
 
