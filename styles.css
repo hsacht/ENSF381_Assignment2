@@ -114,7 +114,8 @@ form {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     background-color: #fff8ee;
     padding: 8px;
     width: 250px;
@@ -123,7 +124,7 @@ input[type="password"] {
     margin-bottom: 12px;
 }
 
-input[type="submit"] {
+input[type="submit"], .login-main input[type="button"] {
     background-color: #f28c8c;
     color: white;
     font-weight: bold;
@@ -136,7 +137,7 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .login-main input[type="button"]:hover {
     opacity: 0.9;
 }
 
@@ -180,6 +181,23 @@ button:hover {
     border-radius: 12px;
     padding: 8px 14px;
 }
+
+#signup-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#signup-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 /* Tiles / Menu Items */
 .ice-cream-tiles {

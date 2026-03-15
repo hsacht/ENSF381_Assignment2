@@ -24,14 +24,15 @@
             <div>
                 <h1>Welcome back!</h1>
                 
-                <form action="menu_view.html">
+                <form id="loginForm" action="menu_view.html">
                     <label for="username">Username:</label><br>
                     <input type="text" id="username" name="username"><br>
                     <label for="password">Password:</label><br>
                     <input type="password" id="password" name="password"><br>
                     <input type="checkbox" id="forgot" name="forgot">
                     <label for="forgot">Forgot Password</label><br>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Login"><br>
+                    New user? <input type="button" value="Create an account" onclick="window.location.href='signup.html'">
                 </form>
             </div>
         </main>
@@ -39,5 +40,7 @@
         <footer>
             <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
         </footer>
+
+        <script src="login.js"></script>
     </body>
 </html>
