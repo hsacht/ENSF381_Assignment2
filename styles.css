@@ -123,7 +123,7 @@ input[type="password"] {
     margin-bottom: 12px;
 }
 
-input[type="submit"] {
+input[type="submit"], .login-main input[type="button"] {
     background-color: #f28c8c;
     color: white;
     font-weight: bold;
@@ -136,7 +136,7 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .login-main input[type="button"]:hover {
     opacity: 0.9;
 }
 
@@ -180,6 +180,7 @@ button:hover {
     border-radius: 12px;
     padding: 8px 14px;
 }
+
 
 /* Tiles / Menu Items */
 .ice-cream-tiles {
