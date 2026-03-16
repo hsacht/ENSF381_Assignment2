@@ -25,6 +25,31 @@ header {
     font-size: 28px;
 }
 
+.message-box {
+    visibility: hidden;
+    margin-bottom: 40px;
+    padding: 10px;
+    min-height: 18px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.message-box.error {
+    visibility: visible;
+    border: 1px solid red;
+    background-color: rgb(108, 8, 0, 0.079);
+    padding: 5px;
+}
+
+.message-box.success {
+    visibility: visible;
+    border: 1px solid green;
+    background-color: rgba(0, 167, 3, 0.274);
+    padding: 5px;
+}
+
 .navbar {
     background-color: #fff3e0;
     text-align: center;
@@ -110,7 +135,7 @@ footer p {
 /* Forms */
 form {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
 }
 
 input[type="text"],
@@ -143,7 +168,6 @@ input[type="submit"]:hover {
 input[type="button"]:hover {
     cursor: pointer;
 }
-
 
 /* Buttons / Links */
 a {
@@ -179,6 +203,22 @@ button:hover {
     border: none;
     border-radius: 12px;
     padding: 8px 14px;
+}
+
+.signup-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #45A049;
+    opacity: 1.0;
 }
 
 /* Tiles / Menu Items */

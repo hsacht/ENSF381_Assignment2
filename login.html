@@ -21,23 +21,29 @@
         </div>
 
         <main class="login-main">
-            <div>
-                <h1>Welcome back!</h1>
+            <h1>Welcome back!</h1>
                 
-                <form action="menu_view.html">
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username"><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password"><br>
-                    <input type="checkbox" id="forgot" name="forgot">
-                    <label for="forgot">Forgot Password</label><br>
-                    <input type="submit" value="Login">
-                </form>
-            </div>
+            <form action="menu_view.html" id="loginForm">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="checkbox" id="forgot" name="forgot">
+                <label for="forgot">Forgot Password</label><br>
+                <input type="submit" value="Login">
+            </form>
+
+            <div id="loginMessage" class="message-box"></div>
+
+            <p class="signup-link">
+                New User? <a href="signup.html">Create an Account</a>
+            </p>
         </main>
 
         <footer>
             <p>&copy; 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
         </footer>
+
+        <script src="login.js"></script>
     </body>
 </html>

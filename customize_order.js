@@ -45,5 +45,7 @@ orderForm.addEventListener("submit", function(event) {
 
     totalPriceDisplay.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
 
-    window.location.href = "order_summary.html";
+    setTimeout(function() {
+        window.location.href = "order_summary.html";
+    }, 1000);
 })
