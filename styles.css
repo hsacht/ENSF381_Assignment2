@@ -27,29 +27,27 @@ header {
 
 .message-box {
     visibility: hidden;
-    margin-bottom: 50px;
-    padding: 5px;
-    min-height: 15px;
+    margin-bottom: 40px;
+    padding: 10px;
+    min-height: 18px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
 }
 
 .message-box.error {
     visibility: visible;
-    color: rgb(190, 0, 0);
     border: 1px solid red;
     background-color: rgb(108, 8, 0, 0.079);
-    border-radius: 3px;
     padding: 5px;
-    margin-bottom: 50px;
 }
 
 .message-box.success {
     visibility: visible;
-    color: rgb(0, 82, 0);
-    border: 1px solid greenyellow;
+    border: 1px solid green;
     background-color: rgba(0, 167, 3, 0.274);
-    border-radius: 3px;
     padding: 5px;
-    margin-bottom: 50px;
 }
 
 .navbar {
@@ -205,6 +203,22 @@ button:hover {
     border: none;
     border-radius: 12px;
     padding: 8px 14px;
+}
+
+.signup-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #45A049;
+    opacity: 1.0;
 }
 
 /* Tiles / Menu Items */
